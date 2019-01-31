@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Page Title</title>
+    <style>
+ h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#f9f9f9;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f9f9f9;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+body{
+    background: url("pro1.jpg") no-repeat left  center;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+    color: #f9f9f9;
+    background-color: limegreen;
+    padding: 15px 15px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+}
+
+button:hover {background-color: red;} 
+    </style>
+</head>
+<body>
+<h1>Contacts</h1>
+        <form id="contact-form">
+            <div class="item text">
+                <label>First name:</label>
+                <div class="field"><input type="text" name="name" id="name"/></div>
+            </div>
+            <div class="item text">
+                    <label>Email:</label>
+                    <div class="field"><input type="text" name="email" id="email"/></div>
+                </div>
+            <div class="item text">
+                <label>Phone No.:</label>
+                <div class="field"><input type="text" name="phone" id="phone"/></div>
+            </div>
+            <div class="button-wrapper">
+                <div class="item button">
+                    <div class="field"><input type="button" id="contacts-op-discard" value="Discard" /></div>
+                </div>
+                <div class="item button button-default">
+                    <div class="field"><input type="submit" id="contacts-op-save" value="Save" /></div>
+                </div>
+            </div>
+            <input type="hidden" name="id_entry" value="0" />
+        </form>
+        <table id="contacts-table">
+                <thead>
+                <tr id="contacts-head">
+                    <th>ID</th>
+                    <th>First name</th>
+                    <th>Phone No.</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                    
+                </tr>
+                </thead>
+                <tbody id="contact-list"></tbody>
+            </table>
+    <script src="app.js"></script>
+</body>
+</html>
